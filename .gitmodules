@@ -1,0 +1,4 @@
+[submodule "learning/Isaac-GR00T"]
+	path = learning/Isaac-GR00T
+	url = https://github.com/pi-r2-flow/Isaac-GR00T.git
+	branch = pir2

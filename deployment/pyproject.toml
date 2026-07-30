@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mindex"
+version = "0.0.1"
+description = "Policy deployment stack for xArm6 + XHand with GR00T."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pyzmq",
+    "omegaconf",
+    "tyro",
+]
+
+[project.optional-dependencies]
+# RealSense camera support
+camera = ["pyrealsense2"]
+# LeRobot dataset format
+lerobot = ["lerobot"]
+# All optional deps
+all = ["pyrealsense2", "lerobot"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mindex*"]

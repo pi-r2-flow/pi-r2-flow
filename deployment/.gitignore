@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.DS_Store
+build/
+dist/
+*.swp
+.vscode/
+.idea/
+
+# bulky artifacts
+*.zip
+*.mp4
+*.png
+*.hdf5
+eval_logs/
